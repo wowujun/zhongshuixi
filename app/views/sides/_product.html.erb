@@ -1,0 +1,107 @@
+<body class="blog blog-small">
+<div class="wrap">
+  <!-- Content Start -->
+  <div id="main">
+    <!-- Title, Breadcrumb Start-->
+    <div class="breadcrumb-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+            <h2 class="title">产品</h2>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+            <div class="breadcrumbs pull-right">
+              <ul>
+                <li>你所在位置:</li>
+                <li><a href="index-2.html">首页</a></li>
+                <li><a href="#">产品</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Title, Breadcrumb End-->
+    <!-- Main Content start-->
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="posts-block col-lg-9 col-md-9 col-sm-8 col-xs-12">
+            <% @sidecontents.each do |sidecontent| %>
+                <article class="post hentry">
+                  <div class="post-image col-md-5">
+                    <a href=<%=sidecontent.content.html_safe%>
+                               <span class="img-hover"></span>
+                      <span class="fullscreen"><i class="icon-search"></i></span>
+                      <%=sidecontent.content.html_safe%>
+                    </a>
+
+                  </div>
+                  <div class="post-content-wrap col-md-7">
+                    <header class="post-header">
+                      <a href="/sides/<%=sidecontent.id%>"><h3 class="content-title"><%=sidecontent.title%></h3></a>
+                      <div class="blog-entry-meta">
+                        <div class="blog-entry-meta-author">
+                          <i class="icon-user"></i>
+                          <a href="#" class="blog-entry-meta-author">John Doe</a>
+                        </div>
+                        <div class="blog-entry-meta-comments">
+                          <i class="icon-comments"></i>
+                          <a href="#" class="blog-entry-meta-comments">4 comments</a>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="post-content">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen not only five centuries, but also the leap essentially.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </article>
+                <div class="blog-divider"></div>
+            <%end%>
+            <div class="pagination-centered">
+              <ul class="pagination">
+                <li class="disabled"><a href="#">«</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar col-lg-3 col-md-3 col-sm-4 col-xs-12">
+            <!-- Testimonials Widget Start -->
+
+            <div class="widget ads">
+              <h3 class="title">产品</h3>
+              <div class="ads-img row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <%=image_tag('p01.png',class:'img-thumbnail',alt:'')%>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <%=image_tag('p02.png',class:'img-thumbnail',alt:'')%>
+                </div>
+              </div>
+              <div class="ads-img row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <%=image_tag('p03.png',class:'img-thumbnail',alt:'')%>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <%=image_tag('p04.png',class:'img-thumbnail',alt:'')%>
+                </div>
+              </div>
+            </div>
+            <!-- Ads Widget End -->
+          </div>
+          <!-- Sidebar End -->
+        </div>
+      </div>
+    </div>
+    <!-- Main Content end-->
+  </div>
+
+</div>

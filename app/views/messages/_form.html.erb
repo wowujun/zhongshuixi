@@ -1,0 +1,42 @@
+<%= form_for(@message) do |f| %>
+    <fieldset>
+      <% if @message.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@message.errors.count, "error") %> prohibited this sidemessage from being saved:</h2>
+
+            <ul>
+              <% @message.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+      <table class="col-lg-8">
+        <tr>
+          <div class="form-group">
+            <td style="margin-top: 10px;width:30px;text-align: right;padding: 10px;"> <%= f.label :联系人 %></td>
+            <td> <%= f.text_field :name,class:"form-control" %></td>
+          </div>
+        </tr>
+
+        <tr>
+          <div class="form-group">
+            <td style="margin-top: 10px;width:30px;text-align: right;padding: 10px;"> <%= f.label :联系电话 %></td>
+            <td>  <%= f.text_field :tel,class:"form-control" %></td>
+          </div>
+        </tr>
+        <tr>
+          <div class="form-group">
+            <td style="margin-top: 10px;width:80px;text-align: right;padding: 10px;"><%= f.label :留言内容 %></td>
+            <td> <%= f.text_area :content,class:"form-control" %></td>
+          </div>
+        </tr>
+
+        <tr>
+          <td align="right" colspan="2" style="padding: 10px;"><div class="actions">
+            <%= f.submit :"提交" ,class:"btn btn-primary-outline pull-right"%>
+          </div>
+        </tr>
+      </table>
+    </fieldset>
+<% end %>

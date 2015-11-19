@@ -1,0 +1,216 @@
+<div id="main">
+  <!-- Slider Start-->
+  <div class="fullwidthbanner-container">
+    <div class="fullwidthbanner rslider">
+      <ul>
+        <!-- THE FIRST SLIDE -->
+        <li data-delay="6000" data-masterspeed="300" data-transition="fade">
+          <div class="slotholder"><%=image_tag('slider-bg-1.jpg','data-fullwidthcentering'=>'on',alt:'')%></div>
+        </li>
+        <!-- THE RESPONSIVE SLIDE -->
+        <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+          <%=image_tag('slider-bg-2.jpg','data-fullwidthcentering'=>'on',alt:'')%>
+      </ul>
+    </div>
+  </div>
+  <!-- Slider End-->
+  <!-- Slogan Start-->
+  <div class="slogan bottom-pad-small">
+    <div class="container">
+      <div class="row">
+        <div class="slogan-content">
+          <div class="col-lg-9 col-md-9">
+            <h2 class="slogan-title">专业至臻 竞合共赢 勇于实践 勇担责任 共同创造价值</h2>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="get-started">
+              <%= link_to '了解我们',sides_path(keywords:"about"),class: params[:keywords]=='about'?'current-link':'menu',class:'btn btn-special btn-color pull-right','data-no-turbolink'=>true %>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Content start-->
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="content-box big ch-item bottom-pad-small">
+          <div class="ch-info-wrap">
+            <div class="ch-info">
+              <div class="ch-info-front ch-img-1"><i class="icon-fullscreen"></i></div>
+              <div class="ch-info-back">
+                <i class="icon-fullscreen"></i>
+              </div>
+            </div>
+          </div>
+          <div class="content-box-info">
+            <h3>XX</h3>
+            <p>
+              XXXXXXXXXXXXXXXXXXXXXX。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="content-box big ch-item bottom-pad-small">
+          <div class="ch-info-wrap">
+            <div class="ch-info">
+              <div class="ch-info-front ch-img-1"><i class="icon-eye-open"></i></div>
+              <div class="ch-info-back">
+                <i class="icon-eye-open"></i>
+              </div>
+            </div>
+          </div>
+          <div class="content-box-info">
+            <h3>XX</h3>
+            <p>
+              XXXXXXXXXXXXXXXXX。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="content-box big ch-item">
+          <div class="ch-info-wrap">
+            <div class="ch-info">
+              <div class="ch-info-front ch-img-1"><i class="icon-edit"></i></div>
+              <div class="ch-info-back">
+                <i class="icon-edit"></i>
+              </div>
+            </div>
+          </div>
+          <div class="content-box-info">
+            <h3>XX</h3>
+            <p>
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Content end-->
+<!-- Recent works start-->
+<div class="recentworks bottom-pad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 animate_afl d1">
+        <div class="portfolio-desc">
+          <h3 class="title">产品介绍</h3>
+          <p>XXXXXXXXXXXXXXXXXXXXX。</p>
+          <p>XXXXXXXXXXXXXXXXXXXXX。</p>
+          <p>XXXXXXXXXXXXXXXXXXXXX。</p> <p>XXXXXXXXXXXXXXXXXXXXX。</p>
+          <div class="carousel-controls">
+            <a class="prev" href="#portfolio-carousel" data-slide="prev"><i class="icon-angle-left"></i></a>
+            <a class="next" href="#portfolio-carousel" data-slide="next"><i class="icon-angle-right"></i></a>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9 col-xs-12">
+        <div class="row">
+          <div id="portfolio-carousel" class="portfolio-carousel slide">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d2">
+                  <div class="portfolio-item">
+                    <a href="img/portfolio/portfolio-1.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
+                      <span class="portfolio-item-hover"></span>
+                      <span class="fullscreen"><i class="icon-search"></i></span><%=image_tag('p01.png',alt:'')%>
+                    </a>
+                    <div class="portfolio-item-title">
+                      <a href="single-project.html">XXXXX</a>
+                      <p>
+                        XXXXXX
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d3">
+                  <div class="portfolio-item">
+                    <a href="img/portfolio/portfolio-2.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
+                      <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><%=image_tag('p02.png',alt:'')%>
+                    </a>
+                    <div class="portfolio-item-title">
+                      <a href="single-project.html">XXXXX</a>
+                      <p>
+                        XXXXXX
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d4">
+                  <div class="portfolio-item">
+                    <a href="img/portfolio/portfolio-3.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
+                      <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><%=image_tag('p03.png',alt:'')%>
+                    </a>
+                    <div class="portfolio-item-title">
+                      <a href="single-project.html">XXXXX</a>
+                      <p>
+                        XXXXXXX
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
+                  <div class="portfolio-item">
+                    <a href="img/portfolio/portfolio-4.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
+                      <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><%=image_tag('p04.png',alt:'')%>
+                    </a>
+                    <div class="portfolio-item-title">
+                      <a href="single-project.html">XXXXX</a>
+                      <p>
+                        XXXXXX
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
+                  <div class="portfolio-item">
+                    <a href="img/portfolio/portfolio-5.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
+                      <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><%=image_tag('p05.png',alt:'')%>
+                    </a>
+                    <div class="portfolio-item-title">
+                      <a href="single-project.html">XXXXXX</a>
+                      <p>
+                        XXXXXX
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
+                  <div class="portfolio-item">
+                    <a href="images/portfolio/portfolio-6.html" class="portfolio-item-link" data-rel="prettyPhoto" >
+                      <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><%=image_tag('p06.png',alt:'')%>
+                    </a>
+                    <div class="portfolio-item-title">
+                      <a href="single-project.html">XXXXXX</a>
+                      <p>
+                       XXXXXXXX
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Recent work end-->

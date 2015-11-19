@@ -1,0 +1,52 @@
+<footer id="footer">
+  <!-- Footer Top Start -->
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-one">
+          <h3>产品中心</h3>
+
+        </section>
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-two">
+          <h3>新闻中心</h3>
+          <ul id="tweets">
+          </ul>
+        </section>
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-three">
+          <% @cfgs.each do |cfg| %>
+              <h3>关于我们</h3>
+              <ul class="contact-us">
+                <li>
+                  <i class="icon-map-marker" style="color: #ffffff"></i>
+                  <p>
+                    <strong style="color: #ffffff">公司地址:</strong><%= cfg.address%> <br>
+                  </p>
+                </li>
+                <li>
+                  <i class="icon-phone" style="color: #ffffff"></i>
+                  <p><strong style="color: #ffffff">联系电话:</strong> +<%= cfg.sale_tel%></p>
+                </li>
+                <li>
+                  <i class="icon-envelope" style="color: #ffffff"></i>
+                  <p><strong style="color: #ffffff">邮箱:</strong><%= cfg.email%></p>
+                </li>
+              </ul>
+          <%end%>
+        </section>
+        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-four">
+          <h3>服务与支持</h3>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Top End -->
+  <!-- Footer Bottom Start -->
+  <div class="footer-bottom">
+
+    <div align="center">Copyright &copy; 2015.Company name All rights reserved.</div>
+
+  </div>
+
+
+  <!-- Footer Bottom End -->
+</footer>

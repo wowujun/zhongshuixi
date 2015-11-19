@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sidecla_id: 1
+  title: MyString
+  inpaper: MyString
+  content: MyText
+  time: 2015-11-18 13:16:46
+  admin_id: 1
+
+two:
+  sidecla_id: 1
+  title: MyString
+  inpaper: MyString
+  content: MyText
+  time: 2015-11-18 13:16:46
+  admin_id: 1

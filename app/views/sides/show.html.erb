@@ -1,0 +1,10 @@
+<%=render 'unhead'%>
+<% @sidecla =@sideclas.find(@sidecontent.sidecla_id) %>
+<%if @sidecla.keywords=='news'%>
+    <%=render 'newscent'%>
+<%end%>
+<%if @sidecla.keywords=='products'%>
+    <%=render 'chanpin'%>
+<%end%>
+<%=render 'footer'%>
+

@@ -1,0 +1,74 @@
+<body class="home">
+<div class="wrap">
+  <!-- Header Start -->
+  <header id="header">
+    <!-- Header Top Bar Start -->
+    <div class="top-bar">
+      <div class="slidedown collapse">
+        <div class="container">
+          <div class="phone-email pull-right">
+            <% @cfgs.each do |cfg| %>
+                <a><i class="icon-phone"></i> 联系我们 : +<%= cfg.sale_tel %></a>
+                <a href="#"><i class="icon-envelope"></i> 邮箱 : <%= cfg.email %></a>
+            <%end%>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Top Bar End -->
+    <!-- Main Header Start -->
+    <div class="main-header">
+      <div class="container">
+        <!-- TopNav Start -->
+        <div class="topnav navbar-header">
+          <a class="navbar-toggle down-button" data-toggle="collapse" data-target=".slidedown">
+            <i class="icon-angle-down icon-current"></i>
+          </a>
+        </div>
+        <!-- TopNav End -->
+        <!-- Logo Start -->
+        <div class="logo pull-left" style="margin-top: -15px">
+          <h1>
+            <a href="#">
+              <%=image_tag('120X120.png',size:'240x88',alt:'pixma')%>
+            </a>
+          </h1>
+        </div>
+        <!-- Logo End -->
+        <!-- Mobile Menu Start -->
+        <div class="mobile navbar-header">
+          <a class="navbar-toggle" data-toggle="collapse" href=".html">
+            <i class="icon-reorder icon-2x"></i>
+          </a>
+        </div>
+        <!-- Mobile Menu End -->
+        <!-- Menu Start -->
+        <nav class="collapse navbar-collapse menu">
+          <ul class="nav navbar-nav sf-menu">
+            <li>
+              <%= link_to '首页',sides_path,class: !params[:keywords]?'current-link':'menu','data-no-turbolink'=>true %>
+            </li>
+            <li>
+              <%= link_to '产品',sides_path(keywords:"products"),class: params[:keywords]=='products'?'current-link':'menu','data-no-turbolink'=>true %>
+            </li>
+            <li>
+              <%= link_to '新闻中心',sides_path(keywords:"news"),class: params[:keywords]=='news'?'current-link':'menu','data-no-turbolink'=>true %>
+            </li>
+
+            <li>
+              <%= link_to '关于我们',sides_path(keywords:"about"),class: params[:keywords]=='about'?'current-link':'menu','data-no-turbolink'=>true %>
+            </li>
+            <li><%= link_to '留言',sides_path(keywords:"message"),class: params[:keywords]=='message'?'current-link':'menu','data-no-turbolink'=>true %></li>
+          </ul>
+        </nav>
+        <!-- Menu End -->
+      </div>
+    </div>
+    <!-- Main Header End -->
+  </header>
+  <!-- Header End -->
+  <!-- Content Start -->
+
+  <!-- Content End -->
+</div>
+<!-- Wrap End -->

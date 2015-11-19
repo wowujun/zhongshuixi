@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sale tel:</strong>
+  <%= @cfg.sale_tel %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @cfg.email %>
+</p>
+
+<p>
+  <strong>Company name:</strong>
+  <%= @cfg.company_name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @cfg.address %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @cfg.content %>
+</p>
+
+<%= link_to 'Edit', edit_cfg_path(@cfg) %> |
+<%= link_to 'Back', cfgs_path %>

@@ -1,0 +1,33 @@
+<div class="widget-container fluid-height clearfix padded">
+  <%= form_for(@cfg) do |f| %>
+
+      <div class="form-horizontal pull-left col-md-8" >
+
+        <div class="form-group">
+          <div class="control-label col-md-3"> 销售电话</div>
+          <div class="col-md-6"><%= f.text_field :sale_tel,class:"form-control" %></div>
+        </div>
+        <div class="form-group">
+          <div class="control-label col-md-3"><%= f.label :邮箱 %></div>
+          <div class="col-md-6"><%= f.text_field :email ,class:"form-control" %></div>
+        </div>
+        <div class="form-group">
+          <div class="control-label col-md-3"><%= f.label :公司名称 %></div>
+          <div class="col-md-6"><%= f.text_field :company_name,class:"form-control"  %></div>
+        </div>
+        <div class="form-group">
+          <div class="control-label col-md-3"><%= f.label :地址 %></div>
+          <div class="col-md-6"><%= f.text_field :address,class:"form-control"  %></div>
+        </div>
+        <div class="form-group">
+          <div class="control-label col-md-3"><%= f.label :备注 %></div>
+          <div class="col-md-6"><%= f.text_area :content ,class:"form-control" %></div>
+        </div>
+        <div class="actions " >
+          <div class="col-md-3" style="margin-top: 10px;"><%= link_to '返回', cfgs_path,class:"btn btn-xs btn-btn btn-default-outline" %></div>
+          <div class="col-md-6" style="padding-right: 0px;"><%= f.submit :'确定', class:"btn btn-primary-outline pull-right" %></div>
+        </div>
+
+      </div>
+  <% end %>
+</div>

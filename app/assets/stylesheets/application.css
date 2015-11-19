@@ -1,0 +1,37 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+  *= require 'color/gray.css'
+ *= require 'color/green.css'
+ *= require 'color/magenta.css'
+ *= require 'color/orange.css'
+  *= require 'bootstrap.min.css'
+ *= require 'bootstrap-switch.css'
+ *= require 'colorpicker.css'
+ *= require 'datatables.css'
+ *= require 'daterange-picker.css'
+ *= require 'font-awesome.css'
+ *= require 'fullcalendar.css'
+ *= require 'isotope.css'
+ *= require 'jquery.fancybox.css'
+ *= require 'morris.css'
+ *= require 'pygments.css'
+ *= require 'se7en-font.css'
+ *= require 'select2.css'
+  *= require 'style.css'
+ *= require 'summernote.css'
+*= require 'timepicker.css'
+*= require 'typeahead.css'
+*= require 'wizard.css'
+
+
+ */

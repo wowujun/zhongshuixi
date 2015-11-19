@@ -1,0 +1,62 @@
+<div class="container fluid-height clearfix">
+  <%=render 'head' %>
+
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="widget-container fluid-height clearfix" style="padding: 10px;">
+        <div class="col-lg-6">
+          <h4 class="icon-desktop">&nbsp;详细介绍</h4><p></p>
+          <p>
+            <span class="col-sm-3" style="text-align: right;">分类:</span>
+            <% @sidecla =@sideclas.find(@sidecontent.sidecla_id) %>
+            <%= @sidecla.title %>
+          </p>
+
+          <p>
+            <span class="col-sm-3" style="text-align: right;">标题:</span>
+            <%= @sidecontent.title %>&nbsp;
+          </p>
+
+          <p>
+            <span class="col-sm-3" style="text-align: right;">摘要:</span>
+            <%= @sidecontent.inpaper %>&nbsp;
+          </p>
+          <p>
+            <span class="col-sm-3" style="text-align: right;">发布时间:</span>
+            <%= @sidecontent.time.strftime("%Y-%m-%d %H:%M:%S") %>&nbsp;
+          </p>
+          <p>
+            <span class="col-sm-3" style="text-align: right;">管理姓名:</span>
+
+            <% @admin=@admins.find(@sidecontent.admin_id) rescue nil %>
+            <% if @admin %>
+              <td class="hidden-xs"><%= @admin.name %></td>
+          <% else %>
+              <td class="hidden-xs">&nbsp;</td>
+          <% end %>
+
+          </p>
+
+          <p>
+            <%= link_to '编辑', edit_sidecontent_path(@sidecontent),class:"btn btn-primary-outline pull-right" ,'data-no-turbolink'=>true %>
+          </p>
+
+        </div>
+
+
+        <div class="col-lg-6 cts-leftborder-container">
+          <h4 class="icon-desktop">&nbsp;内容</h4><p></p>
+
+          <p>
+            <%= @sidecontent.content.html_safe %>
+          </p>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

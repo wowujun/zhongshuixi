@@ -1,0 +1,33 @@
+<div class="container fluid-height clearfix">
+  <%= render 'head'%>
+  <h1 class="heading">全局设置</h1>
+  <div class="widget-container fluid-height clearfix" style="padding: 10px;">
+    <table class="table table-hover table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>销售热线</th>
+        <th>邮箱</th>
+        <th>公司名称</th>
+        <th>公司地址</th>
+        <th>备注</th>
+
+        <th>操作</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @cfgs.each do |cfg| %>
+          <tr>
+            <td><%= cfg.sale_tel %></td>
+            <td><%= cfg.email %></td>
+            <td><%= cfg.company_name %></td>
+            <td><%= cfg.address %></td>
+            <td><%= cfg.content %></td>
+
+            <td align="center"><%= link_to '', edit_cfg_path(cfg), class:"icon-pencil usricons", title: "编辑" %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
