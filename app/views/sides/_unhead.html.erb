@@ -54,7 +54,9 @@
             <li>
               <%= link_to '新闻中心',sides_path(keywords:"news"),class: params[:keywords]=='news'?'current-link':'menu','data-no-turbolink'=>true %>
             </li>
-
+            <li>
+              <%= link_to '联系我们',sides_path(keywords:"contact"),class: params[:keywords]=='contact'?'current-link':'menu','data-no-turbolink'=>true %>
+            </li>
             <li>
               <%= link_to '关于我们',sides_path(keywords:"about"),class: params[:keywords]=='about'?'current-link':'menu','data-no-turbolink'=>true %>
             </li>

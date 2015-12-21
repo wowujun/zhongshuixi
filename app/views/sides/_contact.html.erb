@@ -1,0 +1,71 @@
+<body class="about page">
+<div class="wrap">
+  <!-- Content Start -->
+  <div id="main">
+    <!-- Title, Breadcrumb Start-->
+    <div class="breadcrumb-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+            <h2 class="title">联系我们</h2>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+            <div class="breadcrumbs pull-right">
+              <ul>
+                <li>你所在位置:</li>
+                <li><a href="index-2.html">首页</a></li>
+                <li>联系我们</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Title, Breadcrumb End-->
+    <!-- Main Content start-->
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="title">联系我们</h3>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 animate_afl">
+            <h4>玉溪中水系信息科技有限公司</h4>
+            <% @cfgs.each do |cfg| %>
+                <ul class="contact-us">
+                  <li>
+                    <i class="icon-map-marker" style="color: #A9A9A9 "></i>
+                    <p>
+                      <strong style="color: #A9A9A9 ">公司地址:</strong><%= cfg.address%> <br>
+                    </p>
+                  </li>
+                  <li>
+                    <i class="icon-phone" style="color: #A9A9A9 "></i>
+                    <p><strong style="color: #A9A9A9 ">联系电话:</strong> +<%= cfg.sale_tel%></p>
+                  </li>
+                  <li>
+                    <i class="icon-envelope" style="color: #A9A9A9 "></i>
+                    <p><strong style="color: #A9A9A9 ">邮箱:</strong><%= cfg.email%></p>
+                  </li>
+                  <li>
+                    <i class="icon-envelope" style="color: #A9A9A9 "></i>
+                    <p><strong style="color: #A9A9A9 ">传真:</strong><%= cfg.sale_tel%></p>
+                  </li>
+                </ul>
+            <%end%>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+            <%=image_tag('company_address_map.jpg')%>
+
+          </div>
+        </div>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <!-- Main Content end-->
+  </div>
+</div>
+
+
