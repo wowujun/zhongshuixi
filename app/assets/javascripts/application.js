@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require kindeditor
 //= require turbolinks
-
+//=require_tree .
 //= require javascripts/jquery.min.js
 //= require javascripts/jquery-ui.js
 //= require javascripts/bootstrap.min.js
