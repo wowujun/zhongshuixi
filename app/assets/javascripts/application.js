@@ -67,4 +67,4 @@
 
 //= require javascripts/main.js
 
-
+//= require javascripts/zh_CN.js
